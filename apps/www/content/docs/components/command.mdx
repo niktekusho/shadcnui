@@ -118,7 +118,7 @@ export function CommandMenu() {
   }, [])
 
   return (
-    <CommandDialog open={open} onOpenChange={setOpen}>
+    <CommandDialog open={open} onOpenChange={setOpen} accessibleTitle="Launch a command." accessibleDescription="This description is optional and will be announced to screen readers.">
       <CommandInput placeholder="Type a command or search..." />
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
